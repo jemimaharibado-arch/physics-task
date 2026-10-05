@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    padding: 50px 20px;
+
+    background: #f5f0e8;
+
+    color: #3d3732;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+.us-page {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.label {
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #8b8177;
+}
+
+
+h1 {
+    margin: 0 auto 20px;
+
+    font-size: 42px;
+
+    line-height: 1.25;
+
+    font-weight: normal;
+}
+
+
+.intro {
+    max-width: 650px;
+
+    margin: 0 auto 50px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #665e57;
+}
+
+
+.memory-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+    align-items: start;
+}
+
+
+.memory-card {
+    background: #fffdf8;
+
+    padding: 15px 15px 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+
+    transform: rotate(1deg);
+
+    transition: 0.3s;
+}
+
+
+.memory-card:nth-child(even) {
+    transform: rotate(-1.5deg);
+}
+
+
+.memory-card:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+
+
+.memory-card img {
+    display: block;
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+}
+
+
+.memory-card p {
+    margin: 15px 5px 0;
+
+    font-size: 16px;
+
+    font-style: italic;
+
+    color: #665e57;
+}
+
+
+.letter-section {
+    max-width: 700px;
+
+    margin: 70px auto 40px;
+
+    padding: 45px 35px;
+
+    background: #fffdf8;
+
+    border: 1px solid #ddd3c5;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.letter-section p {
+    margin: 0 0 22px;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #514a44;
+}
+
+
+.letter-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+.next-button {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #3d3732;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+
+.next-button:hover {
+    background: #665e57;
+
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 35px 15px;
+    }
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .memory-card img {
+        height: auto;
+
+        max-height: 500px;
+    }
+
+
+    .letter-section {
+        padding: 35px 25px;
+    }
+
+}

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: #f5f0e8;
+    color: #3d3732;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.sweet-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sweet-letter {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+    padding: 70px 75px;
+    background: #fffdf8;
+    border: 1px solid #ddd3c5;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    animation: appear 0.8s ease;
+}
+
+.sweet-letter::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid #e8ded2;
+    pointer-events: none;
+}
+
+.letter-date {
+    margin: 0 0 45px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #8b8177;
+    letter-spacing: 1px;
+}
+
+h3 {
+    margin: 0 0 35px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.sweet-letter p {
+    margin: 0 0 24px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #514a44;
+}
+
+.letter-signature {
+    margin-top: 40px !important;
+    text-align: right;
+    font-style: italic;
+    color: #6f655d !important;
+}
+
+.next-button {
+    display: block;
+    width: fit-content;
+    margin: 50px auto 0;
+    padding: 14px 25px;
+    background: #3d3732;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.next-button:hover {
+    background: #665e57;
+    transform: translateY(-2px);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    .sweet-letter {
+        padding: 55px 28px;
+    }
+
+    .sweet-letter::before {
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    .sweet-letter p {
+        font-size: 16px;
+        line-height: 1.85;
+    }
+
+    .letter-date {
+        margin-bottom: 35px;
+    }
+}

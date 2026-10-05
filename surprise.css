@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    padding: 30px;
+
+    background: #f5f0e8;
+
+    color: #3d3732;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.surprise-page {
+    width: 100%;
+
+    max-width: 700px;
+
+    padding: 70px 50px;
+
+    text-align: center;
+
+    background: #fffdf8;
+
+    border: 1px solid #ddd3c5;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    animation: appear 1s ease;
+}
+
+
+.small-text {
+    margin-bottom: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #8b8177;
+}
+
+
+h1 {
+    margin: 0 0 30px;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    font-weight: normal;
+}
+
+
+.message {
+    max-width: 550px;
+
+    margin: 15px auto;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #665e57;
+}
+
+
+.heart {
+    margin: 25px 0;
+
+    font-size: 45px;
+
+    color: #8b6f61;
+}
+
+
+h2 {
+    margin-top: 25px;
+
+    font-size: 27px;
+
+    font-weight: normal;
+}
+
+
+.open-button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 28px;
+
+    background: #3d3732;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+
+.open-button:hover {
+    background: #665e57;
+
+    transform: translateY(-2px);
+}
+
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .surprise-page {
+        padding: 50px 25px;
+    }
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+    .message {
+        font-size: 16px;
+    }
+
+
+    h2 {
+        font-size: 23px;
+    }
+
+}
